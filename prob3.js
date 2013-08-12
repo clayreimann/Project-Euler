@@ -59,10 +59,13 @@ var isPrime = (function() {
     };
 }())
 
-var sqrtBig = Math.sqrt(BIG_NUMBER);
+var sqrtBig = Math.ceil(Math.sqrt(BIG_NUMBER));
 
 var possible = [];
 for(var i = 2; i <= sqrtBig; i++) {
+    if(i % 1000 === 0) {
+        console.log("checking "+i+" of "+sqrtBig);
+    }
     if(isPrime(i)) {
         if(BIG_NUMBER % i === 0) {
             possible.push(i);
@@ -70,4 +73,4 @@ for(var i = 2; i <= sqrtBig; i++) {
     }
 }
 
-console.log(possible.length);
+console.log(possible.length+" prime factors of "+BIG_NUMBER);
