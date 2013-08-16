@@ -1,7 +1,7 @@
 // 
 // Clay Reimann 2013
 // 
-// A program to determine the sum of the primes under 2,000,000
+// A program to determine the first triangle number with more than 500 divisors
 // 
 
 var NUM_DIVISORS = 500;
