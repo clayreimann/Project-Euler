@@ -1,7 +1,8 @@
 // 
 // Clay Reimann 2013
 // 
-// A program to determine the sum of the primes under 2,000,000
+// A program to determine the greatest product of a line of 4 numbers in a
+// 20x20 grid 
 // 
 
 var GRID = [
